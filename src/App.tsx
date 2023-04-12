@@ -148,7 +148,7 @@ function App() {
     {/* <Footer data={"hello"}></Footer> */}
     <div>
     {/* <Terminal1 c={cmd} sclr={setLabelColor}></Terminal1> */}
-    {term &&<iframe id="myFrame" src="http://localhost:8888?hostname=kali&&username=kali&&password=a2FsaQ==" style={{position:"absolute",bottom:"0px",width:"100%",height:"300px"}}/>}
+    <iframe id="myFrame" src="http://localhost:8888?hostname=kali&&username=kali&&password=a2FsaQ==" style={{position:"absolute",bottom:"0px",width:"100%",height:"300px"}}/>
     </div>
     </div>
     </div>
