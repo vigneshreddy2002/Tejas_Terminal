@@ -27,7 +27,8 @@ function App() {
   // const [term, setTerm] = useState(false);
 
   const [cmd, setCmd] = useState("Hello World");
-  const [labelColor, setLabelColor] = useState("");
+  // const [labelColor, setLabelColor] = useState("");
+  var labelColor:any;
 
   function sendMessage() {
     //the below if else condition is optional. Only to prevent user from executing when there is a command running already.
@@ -60,9 +61,9 @@ function App() {
         sessionStorage.command_state=0;
         const b= document.getElementById('CES') as HTMLInputElement;
         if(x.Command_Execution_Status==='0')
-    setLabelColor('green');
+    labelColor='green';
     else
-    setLabelColor('red');
+    labelColor='red';
     }
     }
       }
@@ -98,6 +99,7 @@ function App() {
     //****************************************************
      
   
+
 // console.log(cmd)
   // function changeTerm()
   // {
