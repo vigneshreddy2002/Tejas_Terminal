@@ -267,7 +267,8 @@ const Code = ({content,cmd,clr}:any) => {
     set();
 
   }, [])
-  
+  clr1=clr
+  cmd1=cmd
   return (
     <>
     {cmd1=cmd}
