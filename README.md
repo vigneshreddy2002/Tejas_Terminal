@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+## Instructions to get started with Tejas Backend:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Install Python on your system. Version:3.8+. Make sure Python is installed on PATH environment variable so that python can be run from cmd.
+2. Verify if python is installed on cmd by opening cmd and typing ``python --v``
+3. If python is verified on cmd, then create a virtual environment as follows: ``python -m venv <name/path of virtual environment>``. This creates a folder with specified name in the specified path or in the current directory of cmd depending on the argument.
+4. To activate the virtual environent type: ``<Name/Path of VE>\Scripts\activate``
+5. After activation, to install the backend type: ``pip install webssh_embedded``. This should install the backend with required packages.
+6. Then, to run the backend, type: ``wssh --xsrf=False``
+7. To verify if backend is running go to browser and type: ``127.0.0.1:8888/static/js/iframetest.html``.
+8. Form will appear to enter SSH credentials of remote machine. REMOTE MACHINE MUST BE LINUX BASED. After submitting them, terminal should appear. Now commands can be typed in text input.
+9. To look at the complete application, install nodejs. Then clone this repository.
+10. Run npm install in the cloned repo
+11. Run npm start to start the app.
+12. Same form appears to enter SSH credentials. If direct access is required then the iframe src in Terminal1.tsx in components should be as follows:
 
-## Available Scripts
+http://localhost:8888?hostname=<hostname>&&username=<username>&&password=<base_64_encoded>-->
 
-In the project directory, you can run:
+Hostname: Remote machine IP.
 
-### `npm start`
+username: remote machine username
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+password: remote machine password in base 64
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To obtain remote machine password in base 64;
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+``echo -n '<remote machine password>' | base64``
