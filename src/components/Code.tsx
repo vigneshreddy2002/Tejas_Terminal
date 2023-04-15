@@ -271,8 +271,7 @@ const Code = ({content,cmd,clr}:any) => {
   cmd1=cmd
   return (
     <>
-    {cmd1=cmd}
-    { clr1=clr}
+    
     <div className='markdown'>
     
     <Markdown options={{
