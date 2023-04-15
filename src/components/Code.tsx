@@ -16,7 +16,7 @@ import * as Suite from '@rsuite/icons';
 // import Code2 from './Code2';
 import '../styles/sidebar.css'
 // import { SidebarData } from './SidebarData';
-import Terminal from './Terminal';
+
 
 var cmd1:any;
 var c:any;
@@ -181,7 +181,7 @@ const CodeBlock = ({className,children}:any) => {
   // console.log(count_li)
   chi++;
   ch++;
-  console.log(Children_li)
+  // console.log(Children_li)
 
     
   function fcmd()
@@ -194,7 +194,7 @@ const CodeBlock = ({className,children}:any) => {
   function cclr(event:any)
   {
     event.currentTarget.style.color=clr1;
-    console.log(event.currentTarget)
+    console.log(event.currentTarget.style.color)
   }
   return (
     <>
