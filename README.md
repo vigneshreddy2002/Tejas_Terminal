@@ -9,7 +9,7 @@
 7. To verify if backend is running go to browser and type: ``127.0.0.1:8888/static/js/iframetest.html``.
 8. Form will appear to enter SSH credentials of remote machine. REMOTE MACHINE MUST BE LINUX BASED AND MUST HAVE SSH SERVICE RUNNING. (To run ssh service in Linux install openssh server and start the service
 
-Eg. In Ubuntu, Debian etc; ``sudo apt get install openssh-server`` and ``sudo service ssh start``)After submitting them, terminal should appear. Now commands can be typed in text input.
+Eg. In Ubuntu, Debian etc; ``sudo apt-get install openssh-server`` and ``sudo service ssh start``)After submitting them, terminal should appear. Now commands can be typed in text input.
 9. To look at the complete application, install nodejs. Then clone this repository.
 10. Run npm install in the cloned repo
 11. Run npm start to start the app.
