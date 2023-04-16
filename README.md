@@ -12,7 +12,7 @@
 Eg. In Ubuntu, Debian etc; ``sudo apt-get install openssh-server`` and ``sudo service ssh start``)After submitting them, terminal should appear. Now commands can be typed in text input.
 
 9. To look at the complete application, install nodejs. Then clone this repository.
-10. Run npm install in the cloned repo
+10. Run npm install in the cloned repo. If that didnt work out use npm install --force
 11. Run npm start to start the app.
 12. Same form appears to enter SSH credentials. If direct access is required then the iframe src in Terminal1.tsx in components should be as follows:
 
