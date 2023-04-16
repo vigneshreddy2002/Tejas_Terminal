@@ -16,9 +16,9 @@ Eg. In Ubuntu, Debian etc; ``sudo apt-get install openssh-server`` and ``sudo se
 11. Run npm start to start the app.
 12. Same form appears to enter SSH credentials. If direct access is required then the iframe src in Terminal1.tsx in components should be as follows:
 
-http://localhost:8888?hostname=<hostname>&&username=<username>&&password=<base_64_encoded>
+http://localhost:8888?hostname=<hostname_of_machine>&&username=<username_of _user>&&password=<base_64_encoded>
 
-Hostname: Remote machine IP.
+Hostname: Remote machine IP(or name in case it is a known host).
 
 username: remote machine username
 
